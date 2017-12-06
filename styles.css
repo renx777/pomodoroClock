@@ -1,0 +1,134 @@
+body{
+    color:white;
+    background-color:black;
+    font-family:jura;
+  }
+  h1{
+   text-align:center;
+    color:white
+    font-size:70px;
+     
+   
+  }   
+  
+  .intro{
+   
+  text-align:center;
+   
+  }
+      
+      #break,#sess{
+  display:inline-block;
+  }
+  #break{
+    margin-left:50px;
+  }
+  .controls{
+    
+  margin-top:320px;
+  
+  }
+  
+  #butt{
+  margin: 0 auto;
+  width: 200px;
+    
+  }
+  #cont{
+   margin: 0 auto;
+  
+    width: 300px;
+  }
+  
+  
+  #bot{
+    
+    background-color:red;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    
+   
+    position:absolute;
+  }  
+  
+   .display{
+       font-size:50px;  
+      border:1px solid white;
+     position:absolute;
+    
+      width:300px;
+    height:300px;
+    border-radius:50%;
+     z-index:10;
+      }
+  button{
+    background-color:transparent;
+    border:1px solid white;
+    height:35px;
+    width:60px;
+    color:white;
+    cursor:pointer;
+  }
+  
+  button:hover{
+    border:1px solid red;
+  }
+  #dis{
+   margin-top:40%;
+  }
+  
+  #mid{
+    width:300px;
+    height:300px;
+    background-color:black;
+    position:absolute;
+    z-index:2;
+    
+  }
+  .x{
+    animation-name:loadbar;
+    
+    animation-timing-function: linear;
+    animation-play-state:paused;
+     
+  }
+  .y{
+     animation-play-state:running;
+  }
+  
+  .green{
+     animation-name:loadbar;
+      animation-duration: 300s;
+    animation-timing-function: linear;
+    animation-play-state:paused;
+    
+  }
+  
+  .ibutts{
+    cursor:pointer;
+    font-style:bold;
+  }
+  .ibutts:hover{
+    color:red;
+  }
+  .controls:hover{
+    color:red;
+  }
+  
+  
+  
+  .z{
+  animation-play-state :initial;
+  
+  
+  }
+  
+  #pause{
+    
+  }
+  
+  @keyframes loadbar{
+    from {height:300px;}
+    to   {height:0px;}
+  }
