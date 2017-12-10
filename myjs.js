@@ -10,12 +10,17 @@ $( document ).ready(function(){
        
     // to handle animation
        $('#pause').on('click',function(){
-         console.log("blue")
+        
          $('#mid').toggleClass('y');
          
-         
-         
-       })
+        var value=$('#pause').text()
+
+        if(value=="Pause"){
+        $('#pause').text("UnPause")
+       }else{
+        $('#pause').text("Pause")
+       }
+    })
 
     
 }
@@ -55,11 +60,9 @@ var pomo={
         $('#mid').addClass('y');
         pomo.pomosession=true;
       
-      pom
-      pomoBreak=false;
+      pomo.pomoBreak=false;
       
-          console.log(tix);
-       console.log("rd")
+         
           sec--;
           $(b).text(sec);
           
@@ -123,8 +126,7 @@ var pomo={
           clearInterval(brks);
               
            delete brks;
-              pom
-              pomoBreak=false;
+              pomo.pomoBreak=false;
           pomo.start();
           
           }
@@ -134,11 +136,11 @@ var pomo={
    
     start:function(){
      
-       console.log(pomo.session);
+     
          
          pomo.session=true;
        var mins=$('#sminutes').text();
-       console.log(pomo.smin);
+      
    
          setTimeout(function(){
    
@@ -213,12 +215,12 @@ var pomo={
        pomo.pomoPaused=false
      }
      //    pause and unpause break session
-      if(pom.pomoBreak==true && pomo.brkpaused==false){
+      if(pomo.pomoBreak==true && pomo.brkpaused==false){
         console.log("break sess paused")
        window.clearInterval(brks);
            delete brks;
         pomo.brkpaused=true;
-     }else if(pom.pomoBreak==true && pomo.brkpaused==true){
+     }else if(pomo.pomoBreak==true && pomo.brkpaused==true){
        console.log("break sess unpaused")
        brks=window.setInterval(pomo.breakTimer,1000); 
           
