@@ -20,6 +20,11 @@ $( document ).ready(function(){
        }else{
         $('#pause').text("Pause")
        }
+
+       
+    
+    
+    
     })
 
     
